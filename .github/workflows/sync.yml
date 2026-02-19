@@ -64,15 +64,7 @@ jobs:
           LOG_LEVEL: info
         run: npm run sync
 
-      - name: Report sync status
-        if: always()
-        run: |
-          if [ ${{ job.status }} == 'success' ]; then
-            echo "✅ Leaderboard sync completed successfully"
-          else
-            echo "❌ Leaderboard sync failed"
-            exit 1
-          fi
+
 
   # Optional: Send notifications on failure
   notify-on-failure:
