@@ -1,0 +1,29 @@
+{
+  "name": "discord-multi-game-leaderboard",
+  "version": "1.0.0",
+  "description": "Multi-game Discord leaderboard system for Marvel Rivals, Overwatch, and Deadlock",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "sync": "node src/sync.js",
+    "dev": "node --watch src/sync.js"
+  },
+  "keywords": [
+    "discord",
+    "leaderboard",
+    "gaming",
+    "marvel-rivals",
+    "overwatch",
+    "deadlock"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
